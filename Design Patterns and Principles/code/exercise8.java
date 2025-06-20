@@ -1,3 +1,4 @@
+package code;
 interface PaymentStrategy {
     void pay();
 }

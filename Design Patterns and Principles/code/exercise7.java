@@ -1,3 +1,4 @@
+package code;
 interface Stock {
     void register(Observer o);
     void deregister(Observer o);

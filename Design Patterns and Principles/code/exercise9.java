@@ -1,3 +1,4 @@
+package code;
 interface Command {
     void execute();
 }

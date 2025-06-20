@@ -1,3 +1,4 @@
+package code;
 interface CustomerRepository {
     String findCustomerById(int id);
 }

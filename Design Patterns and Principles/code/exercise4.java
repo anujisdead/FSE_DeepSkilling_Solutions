@@ -1,3 +1,4 @@
+package code;
 interface PaymentProcessor {
     void processPayment();
 }
