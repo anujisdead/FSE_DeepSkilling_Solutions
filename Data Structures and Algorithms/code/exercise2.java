@@ -1,3 +1,4 @@
+package code;
 class ProductSearch {
     int productId;
     String productName;

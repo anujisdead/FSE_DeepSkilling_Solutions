@@ -1,3 +1,4 @@
+package code;
 class Order {
     int orderId;
     String customerName;

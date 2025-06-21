@@ -1,4 +1,8 @@
 package code;
+
+import java.util.ArrayList;
+import java.util.List;
+
 interface Stock {
     void register(Observer o);
     void deregister(Observer o);

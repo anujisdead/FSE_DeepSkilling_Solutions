@@ -1,3 +1,4 @@
+package code;
 class Forecast {
     static double futureValue(double current, double rate, int years) {
         if (years == 0) return current;

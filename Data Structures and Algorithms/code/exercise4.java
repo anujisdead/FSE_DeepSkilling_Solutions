@@ -1,3 +1,4 @@
+package code;
 class Employee {
     int employeeId;
     String name;
