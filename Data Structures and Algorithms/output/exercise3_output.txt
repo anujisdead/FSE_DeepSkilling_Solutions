@@ -1,0 +1,17 @@
+Original Orders:
+ID: 1, Name: Alice, Price: 250.75
+ID: 2, Name: Bob, Price: 150.5
+ID: 3, Name: Charlie, Price: 300.0
+ID: 4, Name: David, Price: 120.25
+
+Orders after Bubble Sort:
+ID: 4, Name: David, Price: 120.25
+ID: 2, Name: Bob, Price: 150.5
+ID: 1, Name: Alice, Price: 250.75
+ID: 3, Name: Charlie, Price: 300.0
+
+Orders after Quick Sort:
+ID: 4, Name: David, Price: 120.25
+ID: 2, Name: Bob, Price: 150.5
+ID: 1, Name: Alice, Price: 250.75
+ID: 3, Name: Charlie, Price: 300.0

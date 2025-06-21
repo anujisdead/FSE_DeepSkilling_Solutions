@@ -31,3 +31,32 @@ class BookSearch {
         return null;
     }
 }
+
+class BookSearchTest {
+    public static void main(String[] args) {
+        Book[] books = {
+            new Book(1, "A Tale of Two Cities", "Charles Dickens"),
+            new Book(2, "Moby Dick", "Herman Melville"),
+            new Book(3, "The Catcher in the Rye", "J.D. Salinger"),
+            new Book(4, "To Kill a Mockingbird", "Harper Lee")
+        };
+        // Array must be sorted by title for binary search
+        java.util.Arrays.sort(books, (a, b) -> a.title.compareTo(b.title));
+
+        System.out.println("Linear Search for 'Moby Dick':");
+        Book foundBookLinear = BookSearch.linearSearch(books, "Moby Dick");
+        if(foundBookLinear != null) {
+            System.out.println("Found: " + foundBookLinear.title);
+        } else {
+            System.out.println("Not found.");
+        }
+
+        System.out.println("\nBinary Search for 'The Catcher in the Rye':");
+        Book foundBookBinary = BookSearch.binarySearch(books, "The Catcher in the Rye");
+        if(foundBookBinary != null) {
+            System.out.println("Found: " + foundBookBinary.title);
+        } else {
+            System.out.println("Not found.");
+        }
+    }
+}

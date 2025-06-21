@@ -31,3 +31,33 @@ class Search {
         return -1;
     }
 }
+
+class SearchTest {
+    public static void main(String[] args) {
+        ProductSearch[] products = {
+            new ProductSearch(1, "Apple", "Fruit"),
+            new ProductSearch(2, "Banana", "Fruit"),
+            new ProductSearch(3, "Carrot", "Vegetable"),
+            new ProductSearch(4, "Date", "Fruit"),
+            new ProductSearch(5, "Grape", "Fruit")
+        };
+
+        // Linear Search
+        System.out.println("Linear Search for 'Carrot':");
+        int linearResult = Search.linearSearch(products, "Carrot");
+        if (linearResult != -1) {
+            System.out.println("Found at index: " + linearResult);
+        } else {
+            System.out.println("Not found.");
+        }
+
+        // Binary Search
+        System.out.println("\nBinary Search for 'Date':");
+        int binaryResult = Search.binarySearch(products, "Date");
+        if (binaryResult != -1) {
+            System.out.println("Found at index: " + binaryResult);
+        } else {
+            System.out.println("Not found.");
+        }
+    }
+}

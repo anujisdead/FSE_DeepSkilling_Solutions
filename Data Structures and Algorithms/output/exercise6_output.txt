@@ -1,0 +1,5 @@
+Linear Search for 'Moby Dick':
+Found: Moby Dick
+
+Binary Search for 'The Catcher in the Rye':
+Found: The Catcher in the Rye

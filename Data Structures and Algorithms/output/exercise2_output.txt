@@ -1,0 +1,5 @@
+Linear Search for 'Carrot':
+Found at index: 2
+
+Binary Search for 'Date':
+Found at index: 3

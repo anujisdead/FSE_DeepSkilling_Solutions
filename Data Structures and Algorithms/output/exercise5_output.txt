@@ -1,0 +1,13 @@
+All Tasks:
+Design UI
+Develop Backend
+Test Application
+
+Searching for Task 2:
+Found: Develop Backend
+
+Deleting Task 2:
+
+All Tasks after deletion:
+Design UI
+Test Application

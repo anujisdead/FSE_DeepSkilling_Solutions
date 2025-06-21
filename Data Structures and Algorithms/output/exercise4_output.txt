@@ -1,0 +1,13 @@
+All Employees:
+Alice
+Bob
+Charlie
+
+Searching for Employee 102:
+Found: Bob
+
+Deleting Employee 102:
+
+All Employees after deletion:
+Alice
+Charlie

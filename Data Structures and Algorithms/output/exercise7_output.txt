@@ -1,0 +1,7 @@
+Calculating future value for:
+Initial Amount: 1000.0
+Rate: 0.05
+Years: 10
+
+Future Value (Recursive): 1628.8946267774422
+Future Value (DP): 1628.8946267774422

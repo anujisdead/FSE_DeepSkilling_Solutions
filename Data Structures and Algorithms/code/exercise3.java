@@ -49,3 +49,35 @@ class SortOrders {
         return i + 1;
     }
 }
+
+class SortTest {
+    public static void main(String[] args) {
+        Order[] orders = {
+            new Order(1, "Alice", 250.75),
+            new Order(2, "Bob", 150.50),
+            new Order(3, "Charlie", 300.00),
+            new Order(4, "David", 120.25)
+        };
+
+        System.out.println("Original Orders:");
+        printOrders(orders);
+
+        // Bubble Sort
+        Order[] bubbleSortOrders = java.util.Arrays.copyOf(orders, orders.length);
+        SortOrders.bubbleSort(bubbleSortOrders);
+        System.out.println("\nOrders after Bubble Sort:");
+        printOrders(bubbleSortOrders);
+
+        // Quick Sort
+        Order[] quickSortOrders = java.util.Arrays.copyOf(orders, orders.length);
+        SortOrders.quickSort(quickSortOrders, 0, quickSortOrders.length - 1);
+        System.out.println("\nOrders after Quick Sort:");
+        printOrders(quickSortOrders);
+    }
+
+    static void printOrders(Order[] orders) {
+        for (Order order : orders) {
+            System.out.println("ID: " + order.orderId + ", Name: " + order.customerName + ", Price: " + order.totalPrice);
+        }
+    }
+}

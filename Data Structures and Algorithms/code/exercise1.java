@@ -29,4 +29,34 @@ class Inventory {
     void deleteProduct(int id) {
         products.remove(id);
     }
+
+    void displayProducts() {
+        for (Product p : products.values()) {
+            System.out.println("ID: " + p.productId + ", Name: " + p.productName + ", Qty: " + p.quantity + ", Price: " + p.price);
+        }
+    }
+}
+
+class InventoryTest {
+    public static void main(String[] args) {
+        Inventory inventory = new Inventory();
+        Product p1 = new Product(1, "Laptop", 10, 1200.50);
+        Product p2 = new Product(2, "Mouse", 50, 25.00);
+        inventory.addProduct(p1);
+        inventory.addProduct(p2);
+
+        System.out.println("Inventory after adding products:");
+        inventory.displayProducts();
+
+        Product updatedP1 = new Product(1, "Gaming Laptop", 8, 1500.75);
+        inventory.updateProduct(1, updatedP1);
+
+        System.out.println("\nInventory after updating a product:");
+        inventory.displayProducts();
+
+        inventory.deleteProduct(2);
+
+        System.out.println("\nInventory after deleting a product:");
+        inventory.displayProducts();
+    }
 }

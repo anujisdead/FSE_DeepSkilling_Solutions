@@ -1,0 +1,10 @@
+Inventory after adding products:
+ID: 1, Name: Laptop, Qty: 10, Price: 1200.5
+ID: 2, Name: Mouse, Qty: 50, Price: 25.0
+
+Inventory after updating a product:
+ID: 1, Name: Gaming Laptop, Qty: 8, Price: 1500.75
+ID: 2, Name: Mouse, Qty: 50, Price: 25.0
+
+Inventory after deleting a product:
+ID: 1, Name: Gaming Laptop, Qty: 8, Price: 1500.75

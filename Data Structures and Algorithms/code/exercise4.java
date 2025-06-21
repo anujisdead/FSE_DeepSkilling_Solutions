@@ -46,3 +46,29 @@ class EmployeeSystem {
         }
     }
 }
+
+class EmployeeTest {
+    public static void main(String[] args) {
+        EmployeeSystem es = new EmployeeSystem();
+        es.addEmployee(new Employee(101, "Alice", "Developer", 80000));
+        es.addEmployee(new Employee(102, "Bob", "Manager", 95000));
+        es.addEmployee(new Employee(103, "Charlie", "Analyst", 70000));
+
+        System.out.println("All Employees:");
+        es.traverseEmployees();
+
+        System.out.println("\nSearching for Employee 102:");
+        Employee e = es.searchEmployee(102);
+        if (e != null) {
+            System.out.println("Found: " + e.name);
+        } else {
+            System.out.println("Not Found.");
+        }
+
+        System.out.println("\nDeleting Employee 102:");
+        es.deleteEmployee(102);
+
+        System.out.println("\nAll Employees after deletion:");
+        es.traverseEmployees();
+    }
+}
